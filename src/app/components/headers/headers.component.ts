@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HeadersComponent {
   title: string = 'Nuestra lista de tareas';
+
+  toggleAddTask(){
+  console.log('click')
+  }
+
+
+
 }
+
+
