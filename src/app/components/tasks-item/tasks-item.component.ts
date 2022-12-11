@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
 import { tasks } from 'src/app/mock-servic';
 import { task } from 'src/app/task';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -11,4 +11,14 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 export class TasksItemComponent {
   faTimes = faTimes;
   @Input() task:task=tasks[0];
+  @Output() onDeleteTask: EventEmitter<task> = new EventEmitter(); 
+  @Output() onToggleReminder: EventEmitter<task> = new EventEmitter(); 
+
+  onDelete(task:task){
+    this.onDeleteTask.emit(task);
+  }
+
+  onToggleTask(task:task){
+    this.onToggleReminder.emit(task);
+  }
 }

@@ -4,13 +4,14 @@ margin-top: 5px;
 padding:10px 20px;
 cursor:pointer;
 
+
 }
 
-.task.reminder{
+.task.recordatorio{
     border-left: green solid 5px;
 }
 
-.task h3{
+.task h2{
     align-items: center;
     display: flex;
     justify-content: space-between;

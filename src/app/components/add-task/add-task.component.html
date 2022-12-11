@@ -1,0 +1,22 @@
+<form action="" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="text">
+            Tasks
+        </label>
+        <input type="text" name="text" id="text" [(ngModel)]="text">
+    </div>
+    <div class="form-control">
+        <label for="dia-tiempo">
+            Dia y Tiempo
+        </label>
+        <input type="text" name="dia-tiempo" id="dia-tiempo"[(ngModel)]="dia" >
+    </div>
+    <div class="form-control form-control-check">
+        <label for="recordatorio">
+           recordatorio
+        </label>
+        <input type="checkbox" name="recordatorio" id="recordatorio"[(ngModel)]="Recordatorio" >
+
+    </div>
+    <input type="submit" class="btn btn-block" value="Guardar task">
+</form>

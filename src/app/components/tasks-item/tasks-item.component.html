@@ -1,4 +1,7 @@
-<div class="task">
-    <h2>{{task.text}}<fa-icon [icon]="faTimes" [ngStyle]="{'color':'red'}"></fa-icon> </h2>
+<div class="task"
+[ngClass]="{recordatorio: task.recordatorio}"
+(click)="onToggleTask(task)">
+
+    <h2>{{task.text}}<fa-icon [icon]="faTimes" [ngStyle]="{'color':'red'}" (click)="onDelete(task)"></fa-icon> </h2>
     <p>{{task.dia}}</p>
 </div>
