@@ -1,9 +1,10 @@
 {
   "tasks": [
     {
+      "text": "Realizar modulo de MySql",
+      "dia": "Mañana",
+      "Recordatorio": true,
       "id": 1,
-      "text": "Terminar modulo de Angular",
-      "dia": "Agosto 5 a las 12",
       "recordatorio": true
     }
   ]

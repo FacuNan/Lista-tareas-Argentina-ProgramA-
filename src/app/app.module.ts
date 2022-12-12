@@ -8,9 +8,16 @@ import { ButtonComponent } from './components/button/button.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { TasksItemComponent } from './components/tasks-item/tasks-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import{HttpClientModule}from '@angular/common/http';
-import{FormsModule}from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { AddTaskComponent } from './components/add-task/add-task.component'
+import { RouterModule, Routes } from '@angular/router';
+import { FooterComponent } from './components/footer/footer.component';
+
+const appRoutes:Routes=[
+  {path:'', component:TasksComponent}
+]
+
 
 @NgModule({
   declarations: [
@@ -20,15 +27,17 @@ import { AddTaskComponent } from './components/add-task/add-task.component'
     TasksComponent,
     TasksItemComponent,
     AddTaskComponent,
- 
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
-    FormsModule
-   
+    FormsModule,
+  
+
   ],
   providers: [],
   bootstrap: [AppComponent]
