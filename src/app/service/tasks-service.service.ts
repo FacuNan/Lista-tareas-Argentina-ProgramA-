@@ -13,7 +13,7 @@ headers: new HttpHeaders({'Content-Type':'application/json'})
   providedIn: 'root'
 })
 export class TasksServiceService {
-private apiUrl = 'http://localhost:5000/tasks';
+private apiUrl = 'https://listatareas.onrender.com/tasks';
   constructor(private http:HttpClient) {
     
    }

@@ -5,7 +5,14 @@
       "dia": "Mañana",
       "Recordatorio": true,
       "id": 1,
-      "recordatorio": true
+      "recordatorio": false
+    },
+    {
+      "text": "Angular",
+      "dia": "12",
+      "Recordatorio": true,
+      "id": 2,
+      "recordatorio": false
     }
   ]
 }
